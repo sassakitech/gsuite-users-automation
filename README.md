@@ -1,2 +1,2 @@
 # googleworkspace-users-automation
-Automated solution that uses from opened ticket on Jira Service Management to users management on Google Admin
+Automated solution of creation users that uses from opened ticket on Jira Service Management to Google Admin.
