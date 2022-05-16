@@ -1,4 +1,4 @@
-# googleworkspace-users-automation
+# gsuite-users-automation
 Automated solution of creation and deletion users that uses from opened ticket on Jira Service Management to Google Admin.
 This repository contains Terraform and Python (AWS Lambda) codes.
 
