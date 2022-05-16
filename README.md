@@ -25,7 +25,7 @@ terraform apply
 terraform init
 terraform apply
 ```
-2. After all, get the invoke URL for POST requests and the API key on AWS API Gateway (Plan usage > API keys section).
+2. After all, get the invoke URL for POST requests and the API key on AWS API Gateway (Plan usage > API keys section) to use on Jira Service Management automation, configuring *Send web request* with web request URL (invoke URL on API Gateway created by this Terraform) and the header (x-api-key and the value found in AWS API Gateway)
 
 ## Destroying the Terraform structure
 1. Use **terraform destroy** in the *root* and *remote-state* (do not forget to empty the s3 folder on remote state) folders.
