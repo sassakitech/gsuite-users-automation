@@ -10,7 +10,7 @@ This repository contains Terraform and Python (AWS Lambda) codes.
 - lambda_function.zip (Python codes for AWS Lambda)
 ```
 3. Make sure these files are with the same name. If not, change the values located on *variables.tf*.
-4. Check other variables if are correct (it is recommended do not change the *prefix* and *prod_stage* values!)
+4. In this file, change the value on variable *delegated_account* that has Administrator permissions on GSuite Admin (it is recommended do not change the *prefix* and *prod_stage* values!). The region used is *us-west-2*
 
 ## Building the remote-state and lock state for Terraform structure
 1. On Terminal, enter the *remote-state* folder and run the command:
