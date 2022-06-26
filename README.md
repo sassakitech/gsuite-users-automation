@@ -18,12 +18,12 @@ Some motivations were decisive for this case:
 - And share solutions openly to everyone so that they can help us in some way.
 
 ## How-to
-Before execute the codes included in this repository, follow the steps above:
+Before execute the codes included in this repository, follow the steps below:
 1. On console of Google Cloud Platform (GCP), create one project
 2. Enable API: APIs & Services > Library > Admin SDK API
 3. Create one service account in this project
 4. Create credential to this service account with JSON format (DON'T SHARE THIS KEY WITH ANYONE!!!)
-5. On *Admin* of *Google Workspace* (admin.google.com), navigate to Security > Access and data control > API controls, so click on Domain wide delegation. You will need of client_id value (within JSON file). Get this value and fill on Client ID field and put the oauth scopes above:  
+5. On *Admin* of *Google Workspace* (admin.google.com), navigate to Security > Access and data control > API controls, so click on Domain wide delegation. You will need of client_id value (within JSON file). Get this value and fill on Client ID field and put the oauth scopes below:  
 - https://www.googleapis.com/auth/admin.directory.user
 - https://www.googleapis.com/auth/admin.directory.group
 6. Replace the *credentials.json* located on *files* folder with JSON downloaded before. Maintain the same name or will need change the value on *variables.tf*
@@ -53,7 +53,7 @@ terraform apply
 - In Headers section, put *x-api-key* and the value key generated on AWS API Gateway
 - In body section, with JSON (key and value format) get the values of application with the keys declared on *lambda_function.py*: *first_name*, *last_name* and *email*
 
-Done! Now all POST requests triggered by 3rd-party application send the information to create user on Google Workspace!!! Go ahead with tests and use the imagination and Google`s documentation above to create more automated functions :)
+Done! Now all POST requests triggered by 3rd-party application send the information to create user on Google Workspace!!! Go ahead with tests and use the imagination and Google`s documentation below to create more automated functions :)
 https://developers.google.com/resources/api-libraries/documentation/admin/directory_v1/python/latest/index.html
 
 ## Destroying the Terraform structure
