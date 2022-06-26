@@ -47,8 +47,8 @@ terraform apply
 terraform init
 terraform apply
 ```
-12. After all, get the invoke URL for POST requests and the API key on AWS API Gateway (Plan usage > API keys section). With these information, put them on webhook configuration of third-party application, using
-- Web request URL
+12. After all, get the invoke URL for POST requests and the API key on AWS API Gateway (Plan usage > API keys section). With these information, put them on webhook configuration of third-party application, using:
+- Web request URL for webhooks
 - Method POST
 - In Headers section, put *x-api-key* and the value key generated on AWS API Gateway
 - In body section, with JSON (key and value format) get the values of application with the keys declared on *lambda_function.py*: *first_name*, *last_name* and *email*
